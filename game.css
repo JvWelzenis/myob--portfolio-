@@ -1,0 +1,107 @@
+.game-wrapper {
+    background-color: #44414d;
+    max-width: 1200px;
+    padding: 40px 48px;
+}
+
+.player-vs-pc-flex {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.player-option-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.option-wrapper {
+    margin: 0 12px;
+    position: relative;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: solid 6px white;
+    cursor: pointer;
+}
+
+.option-wrapper:hover {
+    border: solid 6px #00e2a8;
+}
+
+.pc-wrapper {
+    border: solid 6px black;
+    border-radius: 0%;
+    background-color: #313034;
+    text-align: center;
+    color: white;
+}
+
+.pc-wrapper:hover {
+    border: solid 6px black;
+    cursor: auto;
+}
+
+.option-wrapper > img {
+    width: 80%;
+    height: 80%;
+}
+
+.outcome-wrapper {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+
+.outcome-wrapper > div {
+    display: inline-block;
+}
+
+.outcome-big {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+#action, #outcome {
+    color: #00c592;
+}
+
+.score-wrapper {
+    margin: 0 24px;
+    width: 180px;
+    padding: 12px 24px;
+    border: solid 4px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    line-height: 32px;
+    color: white;
+    position: relative;
+}
+
+.player-name {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 6px 0;
+    width: 48px;
+    text-align: center;
+    position: absolute;
+    left: -24px;
+    background-color: #00cd98;
+}
+
+.comp-name {
+    background-color: #136a65;
+    left: auto;
+    right: -24px;
+}

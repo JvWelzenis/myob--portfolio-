@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verhaalgenerator</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+
+    <main>
+        <section>
+            <div class="container">
+                <h2>Welkom bij de verhaal generator</h2>
+                <p>Voer een aantal woorden in en genereer een verhaal</p>
+                <form action="#" onsubmit="return false">
+                <h2>Voer woorden in</h2>
+
+                <div class="form-row">
+                    <p class="form-row-label">Elk verhaal heeft een hoofdrolspeler nodig</p>
+                    <div class="form-items-flex">
+                        <div class="form-item">
+                            <input type="text" name="hoofdrolspeler" id="hoofdrolspeler" placeholder="Jouw naam">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <p class="form-row-label">Geef de namen van andere karakters in jouw verhaal</p>
+                    <div class="form-items-flex">
+                        <div class="form-item">
+                            <input type="text" name="karakter1" id="karakter1" placeholder="Naam karakter 1">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" name="karakter2" id="karakter2" placeholder="Naam karakter 2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <p class="form-row-label">Verhalen spelen zich af op locaties (bijv. Mac Donalds of kantoor)</p>
+                    <div class="form-items-flex">
+                        <div class="form-item">
+                            <input type="text" name="locatie1" id="locatie1" placeholder="Naam locatie 1">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" name="locatie2" id="locatie2" placeholder="Naam locatie 2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <p class="form-row-label">We hebben nog een aantal objecten nodig</p>
+                    <div class="form-items-flex">
+                        <div class="form-item">
+                            <input type="text" name="object1" id="object1" placeholder="Naam object 1">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" name="object2" id="object2" placeholder="Naam object 2">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" name="object3" id="object3" placeholder="Naam object 3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <p class="form-row-label">Nog een aantal bijvoegelijk naamwoorden (bijv. grote, rode, ronde etc.)</p>
+                    <div class="form-items-flex">
+                        <div class="form-item">
+                            <input type="text" name="bijvn1" id="bijvn1" placeholder="Bijvoegelijk naamwoord 1">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" name="bijvn2" id="bijvn2" placeholder="Bijvoegelijk naamwoord 2">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" name="bijvn3" id="bijvn3" placeholder="Bijvoegelijk naamwoord 3">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" name="bijvn4" id="bijvn4" placeholder="Bijvoegelijk naamwoord 4">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" name="bijvn5" id="bijvn5" placeholder="Bijvoegelijk naamwoord 5">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" name="bijvn6" id="bijvn6" placeholder="Bijvoegelijk naamwoord 6">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-row">
+                    <p class="form-row-label">Als laatste iets dat je roept om iets te benadrukken</p>
+                    <div class="form-items-flex">
+                        <div class="form-item">
+                            <input type="text" name="benadrukken1" id="benadrukken1" placeholder="Benadrukken 1">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" name="benadrukken2" id="benadrukken2" placeholder="Benadrukken 2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <p class="form-row-label">Kies een verhaal</p>
+                        <div class="radio-wrapper">
+                           <input type="radio" name="verhaal" id="grappig" value="grappig">
+                           <label for="grappig">Een grappig verhaal</label>
+                        </div>
+                        <div class="radio-wrapper">
+                            <input type="radio" name="verhaal" id="horror" value="horror">
+                            <label for="horror">Een horror verhaal</label>
+                         </div>
+                         <div class="radio-wrapper">
+                            <input type="radio" name="verhaal" id="romantisch" value="romantisch">
+                            <label for="romantisch">Een romantisch verhaal</label>
+                         </div>
+                    </div>
+                
+                    <div class="form-row">
+                        <button onclick="verhaalGenereren()">Genereer verhaal</button>
+                    </div>
+                </form>
+
+                <div id="het-verhaal">
+                    <!-- javascript genereert hier het verhaal en plaatst de HTML met de juiste tekst en input.  -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>

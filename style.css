@@ -1,0 +1,80 @@
+form {
+    max-width: 880px;
+    padding: 60px 40px;
+    background-color: #44414d;
+    color: white;
+}
+
+.form-row {
+    margin: 20px 0;
+}
+
+.form-row-label {
+    font-size: 16px;
+    font-family: 'poppins' , sans-serif;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.form-items-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.form-item {
+    padding: 4px 16px;
+}
+
+.form-item > input {
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 200px;
+    height: 40px;
+    padding: 6px 18px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+}
+
+.form-item > input::placeholder {
+    color: #bab6c7;
+}
+
+.radio-wrapper {
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+}
+
+.radio-wrapper >input {
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.radio-wrapper > label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#het-verhaal {
+    padding: 40px 0;
+}
+
+/* mobile */
+@media screen and (max-width: 480px) {
+form {
+    padding: 24px 12px;
+}
+
+.form-item {
+    width: 100%;
+}
+.form-item > input {
+    min-width: 100%;
+    width: 100%;
+    padding: 4px 16px;
+}
+}
